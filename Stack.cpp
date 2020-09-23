@@ -66,8 +66,15 @@ void mstack::display(int sno)
 	for(int i=top[sno];i>(max/no*sno)-1;i--)
 	cout<<a[i];
 }
+
 int main()
-{	mstack s(20,5);
+{	int min, no;
+  cout << "Enter maximum elements"<<endl;
+  cin << max;
+  cout << "Enter number of Stacks"<<endl;
+  cin << no;
+
+  mstack s = mstack(max, no);
 	int option,ele;
 	char ch;int sno;
 	do{
